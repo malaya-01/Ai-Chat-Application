@@ -27,17 +27,17 @@ import React from 'react';
 
 const ChatHistory = ({ history }) => {
   return (
-    <div className="p-4 overflow-y-auto flex-grow bg-gray-900">
+    <div className="p-4 overflow-y-auto flex-grow bg-transparent ">
       {history.map((entry, index) => (
         <div key={index} className="mb-4">
           <div className="flex justify-end">
-            <div className=" rounded-lg p-3 max-w-lg text-white">
-              <strong>User:</strong> <br/> <div className='border rounded-2xl px-8 py-2'>{entry.user_input}</div>
+            <div className=" rounded-lg p-3 max-w-lg text-black">
+              <strong>User:</strong> <br/> <div className='border-gray-300 bg-slate-600 bg-opacity-10   rounded-2xl px-4 py-2'>{entry.user_input}</div>
             </div>
           </div>
           <div className="flex justify-start mt-2">
-            <div className=" rounded-lg p-3 max-w-fit text-white">
-              <strong>Model:</strong> <br/> {entry.model_response}
+            <div className=" rounded-lg p-3 max-w-fit text-black">
+              <strong>Model:</strong> <br/> <div className='border-gray-300 bg-slate-600 bg-opacity-10  rounded-2xl px-4 py-2'>{entry.model_response}</div>
             </div>
           </div>
         </div>

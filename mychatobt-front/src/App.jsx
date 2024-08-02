@@ -75,10 +75,10 @@ const App = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-full bg-gray-900">
-      <div className="w-4/6 ">
-        {/* <ChatHistory history={history} /> */}
-        <div className="m-5 sticky bottom-0">
+    <div className="flex flex-col items-center justify-center h-full bg-gradient-to-r from-slate-300 to-gray-300">
+      <div className="w-4/6">
+        <ChatHistory history={history} />
+        <div className="m-5 sticky bottom-3">
           <ChatInput onSend={handleSend} />
         </div>
       </div>
